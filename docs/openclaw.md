@@ -14,6 +14,11 @@ native spoken-confirmation scope and adds no operator/admin grants. It still
 requires native tests, matching server qualification and a separately authorized
 device update before hardware acceptance can be claimed.
 
+The same common client negotiates `activity-v1` for sequenced input outcomes and
+input/work/output progress. Empty captures can settle without waiting for a model
+timeout; unsupported or unknown telemetry keeps the existing watchdog. These
+observations add no requests or authority and never replace local playback drain.
+
 Build the modified source, rather than downloading the upstream daemon:
 
 ```bash
