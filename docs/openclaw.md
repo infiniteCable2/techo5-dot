@@ -42,6 +42,11 @@ with `operator.talk`, the `talk` node capability and no node commands. That
 enrollment predates the Talk-event scope repair: the new client also requires
 an explicitly approved `operator.read` grant to receive native `talk.event`.
 Its Gateway-wide read access must be reviewed before upgrading the live grant.
+The optional device-local `openclaw.personal_agent_access` selection uses the
+same shared client as Show: false requests exact read/talk; true requires exact
+read/talk/write and separately approved native personal/device grants. It never
+accepts admin scopes, falls back to setup after token rejection, or changes live
+credentials by itself. See the sibling personal-access provisioning section.
 The pending scope repair is not part of that boot/enrollment qualification. Real speech
 remains unqualified; see the sibling
 [verification record](../../techo5/docs/openclaw-verification.md) for the remaining
