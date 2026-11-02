@@ -6,6 +6,14 @@ continues to own the Dot's existing Linux image, kernel, drivers and boot setup.
 This change does not alter wake models, microphone processing, speaker tuning,
 kernel or firewall.
 
+The common daemon's connected follow-up captures now retain the same native
+logical Talk session after local reply playback drains. Each capture keeps its
+own input/end and playback fences; silence, cancellation, mute, source changes
+and disconnect close that logical conversation. This source repair preserves
+native spoken-confirmation scope and adds no operator/admin grants. It still
+requires native tests, matching server qualification and a separately authorized
+device update before hardware acceptance can be claimed.
+
 Build the modified source, rather than downloading the upstream daemon:
 
 ```bash
