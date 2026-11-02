@@ -8,6 +8,9 @@
 
 <h1 align="center">TECHO5 Dot</h1>
 
+This fork's [OpenClaw Talk candidate](docs/openclaw.md) uses the custom daemon
+from the sibling `techo5` fork. Hardware qualification is still pending.
+
 <h3 align="center">The 2016 Echo Dot, minus Amazon's cloud. Linux inside, Home Assistant in charge.</h3>
 
 <p align="center">
